@@ -10,8 +10,4 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
 
 COPY cv-tex /cv-tex
 WORKDIR /cv-tex
-CMD xelatex resume.tex && cp resume.pdf ../
-# RUN cd /cv-tex && xelatex resume.tex
-
-# RUN pdflatex /cv-tex/resume.tex -interaction=nonstopmode
-# CMD [ "bash" ]
+CMD cd /cv-tex && xelatex resume.tex && cp resume.pdf ../
