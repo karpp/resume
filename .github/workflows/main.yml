@@ -6,4 +6,4 @@ jobs:
     name: A job to compile CV TeX
     steps:
     - name: Build docker
-      uses: karpp/resume@v1
+      uses: ./
