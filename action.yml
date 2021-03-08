@@ -1,0 +1,6 @@
+# action.yml
+name: 'TeX Compiler'
+description: 'Build docker image and compile CV'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
